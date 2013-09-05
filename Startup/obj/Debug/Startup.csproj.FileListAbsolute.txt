@@ -1,0 +1,5 @@
+C:\Users\Wouter\Dropbox\Seize IT\Books\Programming in C#\Source Code\ProgrammingInCSharp\Startup\bin\Debug\Startup.dll
+C:\Users\Wouter\Dropbox\Seize IT\Books\Programming in C#\Source Code\ProgrammingInCSharp\Startup\bin\Debug\Startup.pdb
+C:\Users\Wouter\Dropbox\Seize IT\Books\Programming in C#\Source Code\ProgrammingInCSharp\Startup\obj\Debug\Startup.csprojResolveAssemblyReference.cache
+C:\Users\Wouter\Dropbox\Seize IT\Books\Programming in C#\Source Code\ProgrammingInCSharp\Startup\obj\Debug\Startup.dll
+C:\Users\Wouter\Dropbox\Seize IT\Books\Programming in C#\Source Code\ProgrammingInCSharp\Startup\obj\Debug\Startup.pdb

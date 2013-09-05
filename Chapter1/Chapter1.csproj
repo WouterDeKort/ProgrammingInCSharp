@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AD5D80C-A5FB-4C78-BE1D-2BCCC4008130}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chapter1</RootNamespace>
+    <AssemblyName>Chapter1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objective1\AddingAContinuation.cs" />
+    <Compile Include="Objective1\AsyncAndAwait.cs" />
+    <Compile Include="Objective1\AttachingChildTasksToAParentTask.cs" />
+    <Compile Include="Objective1\CatchingAggregateException.cs" />
+    <Compile Include="Objective1\ContinuingOnAThreadPoolInsteadOfTheUIThread.cs" />
+    <Compile Include="Objective1\EnumeratingAConcurrentBag.cs" />
+    <Compile Include="Objective1\MakingAParallelQuerySequential.cs" />
+    <Compile Include="Objective1\OrderedParallelQuery.cs" />
+    <Compile Include="Objective1\QueuingSomeWorkToTheThreadPool.cs" />
+    <Compile Include="Objective1\ScalabilityVersusResponsiveness.cs" />
+    <Compile Include="Objective1\SchedulingDifferentContinuationTasks.cs" />
+    <Compile Include="Objective1\StartingANewTask.cs" />
+    <Compile Include="Objective1\StartingANewTaskII.cs" />
+    <Compile Include="Objective1\StoppingAThread.cs" />
+    <Compile Include="Objective1\UnorderedParallelQuery.cs" />
+    <Compile Include="Objective1\UsingABackgroundThread.cs" />
+    <Compile Include="Objective1\UsingAConcurrentBag.cs" />
+    <Compile Include="Objective1\UsingAConcurrentDictionary.cs" />
+    <Compile Include="Objective1\UsingAConcurrentQueue.cs" />
+    <Compile Include="Objective1\UsingAConcurrentStack.cs" />
+    <Compile Include="Objective1\UsingAsParallel.cs" />
+    <Compile Include="Objective1\UsingATaskFactory.cs" />
+    <Compile Include="Objective1\UsingBlockingCollectionOfT.cs" />
+    <Compile Include="Objective1\UsingConfigureAwait.cs" />
+    <Compile Include="Objective1\UsingForAll.cs" />
+    <Compile Include="Objective1\UsingGetConsumingEnumerableOnABlockingCollection.cs" />
+    <Compile Include="Objective1\UsingParallelBreak.cs" />
+    <Compile Include="Objective1\UsingParallelForAndParallelForeach.cs" />
+    <Compile Include="Objective1\UsingTaskWaitAll.cs" />
+    <Compile Include="Objective1\UsingTaskWaitAny.cs" />
+    <Compile Include="Objective1\UsingTheParameterizedThreadStart.cs" />
+    <Compile Include="Objective1\CreatingAThreadWithTheThreadClass.cs" />
+    <Compile Include="Objective1\UsingTheThreadStaticAttribute.cs" />
+    <Compile Include="Objective1\UsingThreadLocalOfT.cs" />
+    <Compile Include="Objective2\AccessingSharedDataInAMultithreadedApplication.cs" />
+    <Compile Include="Objective2\AddingAContinuationForCanceledTasks.cs" />
+    <Compile Include="Objective2\APotentialProblemWithMultithreadedCode.cs" />
+    <Compile Include="Objective2\CompareAndExchangeAsANonAtomicOperation.cs" />
+    <Compile Include="Objective2\CreatingADeadlock.cs" />
+    <Compile Include="Objective2\GeneratedCodeFromALockStatement.cs" />
+    <Compile Include="Objective2\SettingATimeoutOnATask.cs" />
+    <Compile Include="Objective2\ThrowingOperationCanceledException.cs" />
+    <Compile Include="Objective2\UsingACancellationToken.cs" />
+    <Compile Include="Objective2\UsingTheInterlockedClass.cs" />
+    <Compile Include="Objective2\UsingTheLockKeyword.cs" />
+    <Compile Include="Objective3\ABasicForLoop.cs" />
+    <Compile Include="Objective3\ABetterReadableNestedIfStatement.cs" />
+    <Compile Include="Objective3\AComplexIfStatement.cs" />
+    <Compile Include="Objective3\AForLoopAsAWhileLoop.cs" />
+    <Compile Include="Objective3\AForLoopWithABreakStatement.cs" />
+    <Compile Include="Objective3\AForLoopWithAContinueStatement.cs" />
+    <Compile Include="Objective3\AForLoopWithACustomIncrement.cs" />
+    <Compile Include="Objective3\AForLoopWithMultipleLoopVariables.cs" />
+    <Compile Include="Objective3\ASwitchStatement.cs" />
+    <Compile Include="Objective3\BasicIfStatement.cs" />
+    <Compile Include="Objective3\BooleanOROperator.cs" />
+    <Compile Include="Objective3\ChangingItemsInAForeach.cs" />
+    <Compile Include="Objective3\CodeBlocksAndScoping.cs" />
+    <Compile Include="Objective3\DoWhileLoop.cs" />
+    <Compile Include="Objective3\ForeachLoop.cs" />
+    <Compile Include="Objective3\GotoInASwitchStatement.cs" />
+    <Compile Include="Objective3\GotoStatementWithALabel.cs" />
+    <Compile Include="Objective3\IfStatementWithCodeBlock.cs" />
+    <Compile Include="Objective3\NestingTheNullCoalescingOperator.cs" />
+    <Compile Include="Objective3\ShortCircuitingTheOROperator.cs" />
+    <Compile Include="Objective3\TheCompilerGeneratedCodeForAForeachLoop.cs" />
+    <Compile Include="Objective3\TheConditionalOperator.cs" />
+    <Compile Include="Objective3\TheNullCoalescingOperator.cs" />
+    <Compile Include="Objective3\UsingAnElseStatement.cs" />
+    <Compile Include="Objective3\UsingMultipleIfElseStatements.cs" />
+    <Compile Include="Objective3\UsingTheANDOperatorII.cs" />
+    <Compile Include="Objective3\UsingTheEqualityOperator.cs" />
+    <Compile Include="Objective3\UsingTheXOROperator.cs" />
+    <Compile Include="Objective3\UsingTtheANDOperator.cs" />
+    <Compile Include="Objective4\AMulticastDelegate.cs" />
+    <Compile Include="Objective4\ContravarianceWithDelegates.cs" />
+    <Compile Include="Objective4\CovarianceWithDelegates.cs" />
+    <Compile Include="Objective4\CreatingALambdaExpressionWithMultipleStatements.cs" />
+    <Compile Include="Objective4\CustomEeventAccessor.cs" />
+    <Compile Include="Objective4\CustomEventArguments.cs" />
+    <Compile Include="Objective4\ExceptionWhenRaisingAnEvent.cs" />
+    <Compile Include="Objective4\LambdaExpressionToCreateADelegate.cs" />
+    <Compile Include="Objective4\ManuallyRaisingEventsWithExceptionHandling.cs" />
+    <Compile Include="Objective4\UsingADelegate.cs" />
+    <Compile Include="Objective4\UsingAnActionToExposeAnEvent.cs" />
+    <Compile Include="Objective4\UsingTheActionDelegate.cs" />
+    <Compile Include="Objective4\UsingTheEventKeyword.cs" />
+    <Compile Include="Objective5\CatchingAFormatException.cs" />
+    <Compile Include="Objective5\CatchingDifferentExceptionTypes.cs" />
+    <Compile Include="Objective5\CreatingACustomException.cs" />
+    <Compile Include="Objective5\InspectingAnException.cs" />
+    <Compile Include="Objective5\ParsingAnInvalidNumber.cs" />
+    <Compile Include="Objective5\RethrowingAnException.cs" />
+    <Compile Include="Objective5\ThrowingAnArgumentNullException.cs" />
+    <Compile Include="Objective5\ThrowingANewExceptionThatPointsToTheOriginalOne.cs" />
+    <Compile Include="Objective5\UsingAFinallyBlock.cs" />
+    <Compile Include="Objective5\UsingEnvironmentFailFast.cs" />
+    <Compile Include="Objective5\UsingExceptionDispatchInfoThrow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Startup\Startup.csproj">
+      <Project>{faea0d97-f7b7-424c-9291-c4b4f0c512f5}</Project>
+      <Name>Startup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

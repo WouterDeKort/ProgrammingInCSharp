@@ -1,0 +1,10 @@
+﻿<Window x:Class="Chapter1.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <Button Click="Button_Click" Content="Continue on UI Thread" />
+        <Label Name="Output" Content="Output" />
+        <Button Click="Button_Click_1" Content="Continue on ThreadPool thread" />
+    </StackPanel>
+</Window>

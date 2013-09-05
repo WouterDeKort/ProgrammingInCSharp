@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFE85808-2A9E-432E-A460-1B2F54DD9A60}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chapter4</RootNamespace>
+    <AssemblyName>Chapter4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objective1\BuildingADirectoryTree.cs" />
+    <Compile Include="Objective1\CompressingDataWithAGZipStream.cs" />
+    <Compile Include="Objective1\CopyingAFile.cs" />
+    <Compile Include="Objective1\CreateAndUseAFileStream.cs" />
+    <Compile Include="Objective1\CreatingANewDirectory.cs" />
+    <Compile Include="Objective1\DeletingAFile.cs" />
+    <Compile Include="Objective1\DeletingAnExistingDirectory.cs" />
+    <Compile Include="Objective1\DependingOnFileExistsWhenReadingFileContent.cs" />
+    <Compile Include="Objective1\DontManuallyConcatenateStringsToFormAFilePath.cs" />
+    <Compile Include="Objective1\ExecutingAnAsynchronousHTTPRequest.cs" />
+    <Compile Include="Objective1\ExecutingAWebRequest.cs" />
+    <Compile Include="Objective1\ExecutingMultipleAwaits.cs" />
+    <Compile Include="Objective1\ExecutingMultipleRequestsInParallel.cs" />
+    <Compile Include="Objective1\ListingAllTheFilesInADirectory.cs" />
+    <Compile Include="Objective1\ListingDriveInformation.cs" />
+    <Compile Include="Objective1\MovingAFile.cs" />
+    <Compile Include="Objective1\MovingADirectory.cs" />
+    <Compile Include="Objective1\OpeningAFileStreamAndDecodeTheBytesToAString.cs" />
+    <Compile Include="Objective1\OpeningATextFileAndReadingTheContent.cs" />
+    <Compile Include="Objective1\SettingAccessControlForADirectory.cs" />
+    <Compile Include="Objective1\UsingABufferedStream.cs" />
+    <Compile Include="Objective1\UsingExceptionHandlingWhenOpeningAFile.cs" />
+    <Compile Include="Objective1\UsingFileCreateTextWithAStreamWriter.cs" />
+    <Compile Include="Objective1\UsingOtherPathMethodsToParseAPath.cs" />
+    <Compile Include="Objective1\UsingPathCombine.cs" />
+    <Compile Include="Objective1\WritingAsynchronouslyToAFile.cs" />
+    <Compile Include="Objective2\AGeneratedWCFProxyClient.cs" />
+    <Compile Include="Objective2\ASampleJSONFile.cs" />
+    <Compile Include="Objective2\ASimplePersonClass.cs" />
+    <Compile Include="Objective2\ASimpleWCFWebService.cs" />
+    <Compile Include="Objective2\ASqlConnectionWithAUsingStatementToAutomaticallyCloseIt.cs" />
+    <Compile Include="Objective2\CreatingAConnectionStringWithSqlConnectionStringBuilder.cs" />
+    <Compile Include="Objective2\CreatingAnXMLFileWithXmlWriter.cs" />
+    <Compile Include="Objective2\ExecutingASQLQueryWithMultipleResultSets.cs" />
+    <Compile Include="Objective2\ExecutingASQLSelectCommand.cs" />
+    <Compile Include="Objective2\InsertingValuesWithAParameterizedQuery.cs" />
+    <Compile Include="Objective2\ParsingAnXMLFileWithAnXmlReader.cs" />
+    <Compile Include="Objective2\PuttingAConnectionStringInTheAppconfigFile.cs" />
+    <Compile Include="Objective2\UpdatingRowsWithExecuteNonQuery.cs" />
+    <Compile Include="Objective2\UsingAConnectionStringFromAnExternalConfigurationFile.cs" />
+    <Compile Include="Objective2\UsingAnXPathQuery.cs" />
+    <Compile Include="Objective2\UsingATransactionScope.cs" />
+    <Compile Include="Objective2\UsingAWCFProxyClient.cs" />
+    <Compile Include="Objective2\UsingCodeFirstToMapAClassToTheDatabase.cs" />
+    <Compile Include="Objective2\UsingSQLScriptToCreateATable.cs" />
+    <Compile Include="Objective2\UsingXmlDocument.cs" />
+    <Compile Include="Objective2\XMLFile.cs" />
+    <Compile Include="Objective3\ALINQSelectQuery.cs" />
+    <Compile Include="Objective3\ASampleOrderClassForLINQQueries.cs" />
+    <Compile Include="Objective3\CreatingAnAnonymousType.cs" />
+    <Compile Include="Objective3\CreatingAndInitializingAnObject.cs" />
+    <Compile Include="Objective3\CreatingXMLWithTheXElementClass.cs" />
+    <Compile Include="Objective3\ImplementingWhere.cs" />
+    <Compile Include="Objective3\LINQMultipleFromStatements.cs" />
+    <Compile Include="Objective3\LINQOrderbyOperator.cs" />
+    <Compile Include="Objective3\LINQSelectOperator.cs" />
+    <Compile Include="Objective3\LINQWhereOperator.cs" />
+    <Compile Include="Objective3\QueryingSomeXMLByUsingLINQToXML.cs" />
+    <Compile Include="Objective3\SampleXML.cs" />
+    <Compile Include="Objective3\TransformingXMLWithFunctionalCreation.cs" />
+    <Compile Include="Objective3\UpdatingXMLInAProceduralWay.cs" />
+    <Compile Include="Objective3\UsingACollectionInitializer.cs" />
+    <Compile Include="Objective3\UsingAnAnonymousMethod.cs" />
+    <Compile Include="Objective3\UsingAnExtensionMethod.cs" />
+    <Compile Include="Objective3\UsingAnObjectInitializer.cs" />
+    <Compile Include="Objective3\UsingGroupByAndProjection.cs" />
+    <Compile Include="Objective3\UsingJoin.cs" />
+    <Compile Include="Objective3\UsingSkipAndTakeToImplementPaging.cs" />
+    <Compile Include="Objective3\UsingWhereAndOrderByInALINQToXMLQuery.cs" />
+    <Compile Include="Objective4\ImplementingISerializable.cs" />
+    <Compile Include="Objective4\InfluencingSerializationAndDeserialization.cs" />
+    <Compile Include="Objective4\SerializingADerivedComplexClassToXML.cs" />
+    <Compile Include="Objective4\SerializingAnObjectWithTheXmlSerializer.cs" />
+    <Compile Include="Objective4\UsingADataContract.cs" />
+    <Compile Include="Objective4\UsingAttributesToControlSerialization.cs" />
+    <Compile Include="Objective4\UsingBinarySerialization.cs" />
+    <Compile Include="Objective4\UsingTheDataContractJsonSerializer.cs" />
+    <Compile Include="Objective4\UsingTheDataContractSerializer.cs" />
+    <Compile Include="Objective4\UsingTheXMLAttributesToConfigureSerialization.cs" />
+    <Compile Include="Objective5\CreatingAJaggedArray.cs" />
+    <Compile Include="Objective5\InheritingFromListTToFormACustomCollection.cs" />
+    <Compile Include="Objective5\UsingACustomCollection.cs" />
+    <Compile Include="Objective5\UsingAnArray.cs" />
+    <Compile Include="Objective5\UsingATwoDimensionalArray.cs" />
+    <Compile Include="Objective5\UsingDictionaryTKeyTValue.cs" />
+    <Compile Include="Objective5\UsingHashSetT.cs" />
+    <Compile Include="Objective5\UsingIListTAndICollectionT.cs" />
+    <Compile Include="Objective5\UsingListT.cs" />
+    <Compile Include="Objective5\UsingQueueT.cs" />
+    <Compile Include="Objective5\UsingStackT.cs" />
+    <Compile Include="Objective5\UsingTheISetTInterface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Startup\Startup.csproj">
+      <Project>{FAEA0D97-F7B7-424C-9291-C4B4F0C512F5}</Project>
+      <Name>Startup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

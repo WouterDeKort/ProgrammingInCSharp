@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5746D92-B897-4899-9B5D-72E6DDEF4CB5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chapter3</RootNamespace>
+    <AssemblyName>Chapter3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objective1\ASampleXMLWithPersonData.cs" />
+    <Compile Include="Objective1\ASampleXSDFile.cs" />
+    <Compile Include="Objective1\CustomerAndAddressClasses.cs" />
+    <Compile Include="Objective1\DeserializingAnObjectWithTheJavaScriptSerializer.cs" />
+    <Compile Include="Objective1\ManuallyValidatingAZIPCode.cs" />
+    <Compile Include="Objective1\RunningManualValidation.cs" />
+    <Compile Include="Objective1\SavingANewCustomerToTheDatabase.cs" />
+    <Compile Include="Objective1\SeeingWhetherAStringContainsPotentialJSONData.cs" />
+    <Compile Include="Objective1\UsingConfigurationOptionsWhenParsingANumber.cs" />
+    <Compile Include="Objective1\UsingConvertToConvertFromDoubleToInt.cs" />
+    <Compile Include="Objective1\UsingConvertWithANullValue.cs" />
+    <Compile Include="Objective1\UsingParse.cs" />
+    <Compile Include="Objective1\UsingTryParse.cs" />
+    <Compile Include="Objective1\ValidateAZIPCodeWithARegularExpression.cs" />
+    <Compile Include="Objective1\ValidateAZIPCodeWithARegularExpressionII.cs" />
+    <Compile Include="Objective1\ValidatingAnXMLFileWithASchema.cs" />
+    <Compile Include="Objective2\ANaiveSetImplementation.cs" />
+    <Compile Include="Objective2\ASetImplementationThatUsesHashing.cs" />
+    <Compile Include="Objective2\DeclarativeCAS.cs" />
+    <Compile Include="Objective2\ExportingAPublicKey.cs" />
+    <Compile Include="Objective2\GettingTheValueOfASecureString.cs" />
+    <Compile Include="Objective2\ImperativeCAS.cs" />
+    <Compile Include="Objective2\InitializingASecureString.cs" />
+    <Compile Include="Objective2\SigningAndVerifyingDataWithACertificate.cs" />
+    <Compile Include="Objective2\UseASymmetricEncryptionAlgorithm.cs" />
+    <Compile Include="Objective2\UsingAKeyContainerForStoringAnAsymmetricKey.cs" />
+    <Compile Include="Objective2\UsingAPublicAndPrivateKeyToEncryptAndDecryptData.cs" />
+    <Compile Include="Objective2\UsingSHA256ManagedToCalculateAHashCode.cs" />
+    <Compile Include="Objective3\InspectingThePublicKeyOfASignedAssembly.cs" />
+    <Compile Include="Objective3\RedirectinAssemblyBindingsToANewerVersion.cs" />
+    <Compile Include="Objective3\SpecifyinAdditionalLocationsForAssemblies.cs" />
+    <Compile Include="Objective3\SpecifyingAdditionalLocationsForAssemblies.cs" />
+    <Compile Include="Objective4\ApplyingTheConditionalAttribute.cs" />
+    <Compile Include="Objective4\ApplyingTheDebuggerDisplayAttribute.cs" />
+    <Compile Include="Objective4\ASimpleConsoleApplication.cs" />
+    <Compile Include="Objective4\CallAMethodOnlyInADebugBuild.cs" />
+    <Compile Include="Objective4\CheckingForTheDebugSymbol.cs" />
+    <Compile Include="Objective4\DefiningACustomSymbol.cs" />
+    <Compile Include="Objective4\DisablingAndEnablingSpecificWarnings.cs" />
+    <Compile Include="Objective4\ExaminingPDBFiles.cs" />
+    <Compile Include="Objective4\TheLineDirective.cs" />
+    <Compile Include="Objective4\ThePragmaWarningDirective.cs" />
+    <Compile Include="Objective4\TheWarningAndErrorDirectives.cs" />
+    <Compile Include="Objective4\UsingPreprocessorDirectivesToTargetMultiplePlatforms.cs" />
+    <Compile Include="Objective5\ConfiguringTraceListener.cs" />
+    <Compile Include="Objective5\CreatingAPerformanceCounter.cs" />
+    <Compile Include="Objective5\ReadingDataFromAPerformanceCounter.cs" />
+    <Compile Include="Objective5\ReadingDataFromTheEventLog.cs" />
+    <Compile Include="Objective5\UsingAConfigurationFileForTracing.cs" />
+    <Compile Include="Objective5\UsingEntryWritten.cs" />
+    <Compile Include="Objective5\UsingTheDebugClass.cs" />
+    <Compile Include="Objective5\UsingTheStopWatchClass.cs" />
+    <Compile Include="Objective5\UsingTheTraceSourceClass.cs" />
+    <Compile Include="Objective5\WritingDataToTheEventLog.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Startup\Startup.csproj">
+      <Project>{faea0d97-f7b7-424c-9291-c4b4f0c512f5}</Project>
+      <Name>Startup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

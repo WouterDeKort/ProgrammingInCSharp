@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEB92F73-AB5C-483F-9D24-0D9B033DF88E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chapter2</RootNamespace>
+    <AssemblyName>Chapter2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objective1\AddingAConstructorToYourType.cs" />
+    <Compile Include="Objective1\CallingAMethod.cs" />
+    <Compile Include="Objective1\ChainingConstructors.cs" />
+    <Compile Include="Objective1\CreatingACollectionSuchAsADeckClass.cs" />
+    <Compile Include="Objective1\CreatingACustomStruct.cs" />
+    <Compile Include="Objective1\CreatingAMethod.cs" />
+    <Compile Include="Objective1\CreatingAnExtensionMethod.cs" />
+    <Compile Include="Objective1\DeclaringAndUsingAField.cs" />
+    <Compile Include="Objective1\GenericNullableOfTImplementation.cs" />
+    <Compile Include="Objective1\OverridingAVirtualMethod.cs" />
+    <Compile Include="Objective1\PassingACompleteCustomerToAMethod.cs" />
+    <Compile Include="Objective1\PassingOnlyAnAddresToAMethod.cs" />
+    <Compile Include="Objective1\ReturningDataFromAMethod.cs" />
+    <Compile Include="Objective1\UsingAWhereClauseOnAClassDefinition.cs" />
+    <Compile Include="Objective1\UsingDefaultOfTWithAGenericTypeParameter.cs" />
+    <Compile Include="Objective1\UsingNamedAndOptionalArguments.cs" />
+    <Compile Include="Objective1\UsingTheFlagAttributeForAnEnum.cs" />
+    <Compile Include="Objective1\UsingTheSealedKeywordOnAMethod.cs" />
+    <Compile Include="Objective2\BoxingAnIntegerValue.cs" />
+    <Compile Include="Objective2\CastingADoubleToAnInt.cs" />
+    <Compile Include="Objective2\CreatingACustomDynamicObject.cs" />
+    <Compile Include="Objective2\ExplicitlyCastingABaseTypeToADerivedType.cs" />
+    <Compile Include="Objective2\ExportingSomeDataToExcel.cs" />
+    <Compile Include="Objective2\ImplementingAnImplicitAndExplicitConversionOperator.cs" />
+    <Compile Include="Objective2\ImplicitlyConvertingAnIntegerToADouble.cs" />
+    <Compile Include="Objective2\ImplicitlyConvertingAnObjectToABaseType.cs" />
+    <Compile Include="Objective2\TheDynamicKeywordInASPNETMVC.cs" />
+    <Compile Include="Objective2\UsingAnImplicitAndExplicitCastOperatorOnACustomType.cs" />
+    <Compile Include="Objective2\UsingTheBuiltInConvertAndParseMethods.cs" />
+    <Compile Include="Objective2\UsingTheIsAndAsOperators.cs" />
+    <Compile Include="Objective3\ChangingAPrivateFieldWithoutOutsideUsersNoticing.cs" />
+    <Compile Include="Objective3\CreatingAProperty.cs" />
+    <Compile Include="Objective3\EncapsulatingAFieldWithCustomMethods.cs" />
+    <Compile Include="Objective3\ImplementingAnInterfaceExplicitly.cs" />
+    <Compile Include="Objective3\ImplementingAnInterfaceExplicitlyII.cs" />
+    <Compile Include="Objective3\TheIObjectContextAdapterInterface.cs" />
+    <Compile Include="Objective3\UsingAccessModifiers.cs" />
+    <Compile Include="Objective3\UsingTheInternalAccessModifier.cs" />
+    <Compile Include="Objective3\UsingThePrivateAccessModifier.cs" />
+    <Compile Include="Objective3\UsingTheProtectedAccessModifierWithInheritance.cs" />
+    <Compile Include="Objective4\AddingASetAccessorToAnImplementedInterfaceProperty.cs" />
+    <Compile Include="Objective4\ARectangleClassWithAnAreaCalculation.cs" />
+    <Compile Include="Objective4\ASquareClassThatInheritsFromRectangle.cs" />
+    <Compile Include="Objective4\CreatingABaseClass.cs" />
+    <Compile Include="Objective4\CreatingAnAbstractClass.cs" />
+    <Compile Include="Objective4\CreatingAndImplementingAnInterface.cs" />
+    <Compile Include="Objective4\CreatingAnInterfaceWithAGenericTypeParameter.cs" />
+    <Compile Include="Objective4\HidingAMethodWithTheNewKeyword.cs" />
+    <Compile Include="Objective4\IComparableInterface.cs" />
+    <Compile Include="Objective4\ImplementingIEnumerableOfTOnACustomType.cs" />
+    <Compile Include="Objective4\ImplementingTheIComparableInterface.cs" />
+    <Compile Include="Objective4\InheritingFromABaseClass.cs" />
+    <Compile Include="Objective4\InstantiatingAConcreteTypeThatImplementsAnInterface.cs" />
+    <Compile Include="Objective4\OverridingAVirtualMethod.cs" />
+    <Compile Include="Objective4\SyntacticSugarOfTheForeachStatement.cs" />
+    <Compile Include="Objective4\TheIDisposableInterface.cs" />
+    <Compile Include="Objective4\UsingTheSquareClass.cs" />
+    <Compile Include="Objective5\AddingPropertiesToACustomAttribute.cs" />
+    <Compile Include="Objective5\ApplyingAnAttribute.cs" />
+    <Compile Include="Objective5\CreatingACustomAttribute.cs" />
+    <Compile Include="Objective5\CreatingACustomPlugInClass.cs" />
+    <Compile Include="Objective5\CreatingAFuncTypeWithALambda.cs" />
+    <Compile Include="Objective5\CreatingAnInterfaceThatCanBeFoundThroughReflection.cs" />
+    <Compile Include="Objective5\CreatingHelloWorldWithAnExpressionTree.cs" />
+    <Compile Include="Objective5\DefininTheTargetsForACustomAttribute.cs" />
+    <Compile Include="Objective5\ExecutingAMethodThroughReflection.cs" />
+    <Compile Include="Objective5\GeneratingASourceFileFromCodeCompileUnit.cs" />
+    <Compile Include="Objective5\GeneratingHelloWorldWithTheCodeDOM.cs" />
+    <Compile Include="Objective5\GettingASpecificAttributeInstance.cs" />
+    <Compile Include="Objective5\GettingTheValueOfAFieldThroughReflection.cs" />
+    <Compile Include="Objective5\InspectingAnAssemblyForTypesThatImplementACustomInterface.cs" />
+    <Compile Include="Objective5\SeeingWhetherAnAttributeIsDefined.cs" />
+    <Compile Include="Objective5\SettingTheAllowMultipleParameterForACustomAttribute.cs" />
+    <Compile Include="Objective5\SpecifyingTheTargetOfAnAttributeExplicitly.cs" />
+    <Compile Include="Objective5\TheAutomaticallyGeneratedSourceFile.cs" />
+    <Compile Include="Objective5\UsingACategoryAttributeInXUnit.cs" />
+    <Compile Include="Objective5\UsingACustomAttribute.cs" />
+    <Compile Include="Objective5\UsingMultipleAttributes.cs" />
+    <Compile Include="Objective6\AddingAFinalizer.cs" />
+    <Compile Include="Objective6\CallingDisposeToFreeUnmanagedResources.cs" />
+    <Compile Include="Objective6\ForcingAGarbageCollection.cs" />
+    <Compile Include="Objective6\ImplementingIDisposableAndAFinalizer.cs" />
+    <Compile Include="Objective6\NotClosingAFileWillThrowAnError.cs" />
+    <Compile Include="Objective6\TheIDisposableInterface.cs" />
+    <Compile Include="Objective6\UsingWeakReference.cs" />
+    <Compile Include="Objective7\ChangingACharacterWithAStringBuilder.cs" />
+    <Compile Include="Objective7\ChangingAStringWithARegularExpression.cs" />
+    <Compile Include="Objective7\CreatingACompositeStringFormatting.cs" />
+    <Compile Include="Objective7\CreatingALargeNumberOfStrings.cs" />
+    <Compile Include="Objective7\DisplayingADateTimeWithDifferentFormatStrings.cs" />
+    <Compile Include="Objective7\DisplayingANumberWithACurrencyFormatString.cs" />
+    <Compile Include="Objective7\ImplementingCustomFormattingOnAType.cs" />
+    <Compile Include="Objective7\IteratingOverAString.cs" />
+    <Compile Include="Objective7\OverridingToString.cs" />
+    <Compile Include="Objective7\ReadingASubstring.cs" />
+    <Compile Include="Objective7\UsingAStringBuilderInALoop.cs" />
+    <Compile Include="Objective7\UsingAStringReaderAsTheInputForAnXmlReader.cs" />
+    <Compile Include="Objective7\UsingAStringWriterAsTheOutputForAnXmlWriter.cs" />
+    <Compile Include="Objective7\UsingIndexOfAndLastIndexOf.cs" />
+    <Compile Include="Objective7\UsingStartsWithAndEndsWith.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Startup\Startup.csproj">
+      <Project>{faea0d97-f7b7-424c-9291-c4b4f0c512f5}</Project>
+      <Name>Startup</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
