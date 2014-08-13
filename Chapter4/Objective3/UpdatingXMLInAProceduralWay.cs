@@ -27,14 +27,14 @@ namespace Chapter4.Objective3
 
             XElement root = XElement.Parse(xml);
 
-            foreach (XElement p in root.Descendants("Person"))
+            foreach (XElement p in root.Descendants("person"))
             {
-                string name = (string) p.Attribute("firstName") + (string) p.Attribute("lastName");
-                p.Add(new XAttribute("IsMale", name.Contains("John")));
-                XElement contactDetails = p.Element("ContactDetails");
-                if (!contactDetails.Descendants("PhoneNumber").Any())
+                string name = (string) p.Attribute("firstname") + (string) p.Attribute("lastname");
+                p.Add(new XAttribute("ismale", name.Contains("john")));
+                XElement contactDetails = p.Element("contactdetails");
+                if (!contactDetails.Descendants("phonenumber").Any())
                 {
-                    contactDetails.Add(new XElement("PhoneNumber", "001122334455"));
+                    contactDetails.Add(new XElement("phonenumber", "001122334455"));
                 }
             }
         }

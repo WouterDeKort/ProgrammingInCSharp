@@ -11,6 +11,9 @@ namespace Chapter2.Objective6
     {
         public void Run()
         {
+            var v = new UnmanagedWrapper();
+            v.Dispose();
+            v.Dispose();
         }
 
         private class UnmanagedWrapper : IDisposable
@@ -52,6 +55,8 @@ namespace Chapter2.Objective6
             protected virtual void Dispose(bool disposing)
             {
                 Marshal.FreeHGlobal(unmanagedBuffer);
+                unmanagedBuffer = IntPtr.Zero;
+
                 if (disposing)
                 {
                     if (Stream != null)

@@ -12,18 +12,19 @@ namespace Chapter3.Objective2
     {
         public void Run()
         {
+            SignAndVerify();
         }
 
         public static void SignAndVerify()
         {
             string textToSign = "Test paragraph";
-            byte[] signature = Sign(textToSign, "cn=WouterDeKort");
+            byte[] signature = Sign(textToSign);
             // Uncomment this line to make the verification step fail
             // signature[0] = 0;
             Console.WriteLine(Verify(textToSign, signature));
         }
 
-        private static byte[] Sign(string text, string certSubject)
+        private static byte[] Sign(string text)
         {
             X509Certificate2 cert = GetCertificate();
             var csp = (RSACryptoServiceProvider) cert.PrivateKey;

@@ -12,6 +12,7 @@ namespace Chapter1.Objective1
         {
             Console.WriteLine("Starting threads..");
             var t = new Thread(ThreadMethod);
+            
             t.Start();
 
             for (int i = 0; i < 4; i++)

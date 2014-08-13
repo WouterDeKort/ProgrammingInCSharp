@@ -12,14 +12,15 @@ namespace Chapter4.Objective1
         public void Run()
         {
             WebRequest request = WebRequest.Create("http://www.microsoft.com");
-            WebResponse response = request.GetResponse();
+            using (WebResponse response = request.GetResponse())
+            {
 
-            var responseStream = new StreamReader(response.GetResponseStream());
-            string responseText = responseStream.ReadToEnd();
-
-            Console.WriteLine(responseText); 
-
-            response.Close();
+                using (var responseStream = new StreamReader(response.GetResponseStream()))
+                {
+                    string responseText = responseStream.ReadToEnd();
+                    Console.WriteLine(responseText);
+                }
+            }
         }
     }
 }

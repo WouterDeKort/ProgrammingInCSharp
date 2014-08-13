@@ -15,7 +15,7 @@ namespace Chapter4.Objective1
             foreach (DriveInfo driveInfo in drivesInfo)
             {
                 Console.WriteLine("Drive {0}", driveInfo.Name);
-                Console.WriteLine("  File type: {0}", driveInfo.DriveType);
+                Console.WriteLine("  Drive type: {0}", driveInfo.DriveType);
 
                 if (driveInfo.IsReady)
                 {

@@ -9,7 +9,12 @@ namespace Chapter1.Objective4
     {
         public void Run()
         {
+            Pub pub = new Pub();
+
+            pub.Raise();
         }
+            
+
 
         public class Pub
         {

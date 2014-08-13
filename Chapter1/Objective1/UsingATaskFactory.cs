@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Threading;
 using System.Threading.Tasks;
 using Startup;
 
@@ -10,16 +11,16 @@ namespace Chapter1.Objective1
     {
         public void Run()
         {
-            Task<Int32[]> parent = Task.Run(() =>
+            Task<Int32[]> parent = Task.Factory.StartNew(() =>
             {
                 var results = new Int32[3];
 
                 var tf = new TaskFactory(TaskCreationOptions.AttachedToParent,
                     TaskContinuationOptions.ExecuteSynchronously);
 
-                tf.StartNew(() => results[0] = 0);
-                tf.StartNew(() => results[1] = 1);
-                tf.StartNew(() => results[2] = 2);
+                tf.StartNew(() => { Thread.Sleep(1000); results[0] = 0; });
+                tf.StartNew(() => { Thread.Sleep(1000); results[1] = 1; });
+                tf.StartNew(() => { Thread.Sleep(1000); results[2] = 2; });
                 return results;
             });
 

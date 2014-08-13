@@ -15,13 +15,14 @@ namespace Chapter1.Objective2
             CancellationToken token = cancellationTokenSource.Token;
             Task task = Task.Run(() =>
             {
-                while (!token.IsCancellationRequested)
+                while (true)
                 {
+                    token.ThrowIfCancellationRequested();
+                
                     Console.Write("*");
                     Thread.Sleep(1000);
                 }
 
-                throw new OperationCanceledException();
             }, token)
                 .ContinueWith(t => { Console.WriteLine("You have canceled the task"); },
                     TaskContinuationOptions.OnlyOnCanceled);

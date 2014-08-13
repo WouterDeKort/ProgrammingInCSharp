@@ -25,11 +25,6 @@ namespace Chapter3.Objective2
                 buckets[bucket].Add(item);
             }
 
-            public bool Contains(T item)
-            {
-                return Contains(item, GetBucket(item.GetHashCode()));
-            }
-
             private int GetBucket(int hashcode)
             {
                 // A Hash code can be negative. To make sure that you end up with a positive 
